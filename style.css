@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  main {
+    max-width: 122.8rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .aside {
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .heading-text {
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #c1c1c1
+  }
+  
+  .author {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  .items {
+    list-style: none;
+  }
+  
+  .items li {
+    font-size: 2rem;
+    font-style: italic;
+    color: #434343;
+    margin-bottom: 3rem;
+  }
+  
+  .main {
+    padding: 2rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+
+  
+  .first-board {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    background-color: #D3647B;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #FAFAFA;
+  }
+  
+  .first-board::before {
+    content: url(img/Ellipse\ 12.png);
+    width: 1000%;
+    display: block;
+    position: absolute;
+    top: -3rem;
+  }
+  
+  article {
+    margin-bottom: 5rem;
+  }
+  
+  article p {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    line-height: 120%;
+  }
+  
+  .second-board {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    background-color: #AC6ACB;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #FAFAFA;
+  }
+  
+  .second-board::after {
+    content: url(img/Polygon\ 5.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+  
+  .third-board {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    background-color: #535ED3;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #FAFAFA;
+  }
+  
+  .third-board::before {
+    content: url(img/Polygon\ 6.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+  
+  .fourth-board {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    background-color: #269D8B;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: #FAFAFA;
+    position: relative;
+  }
+  
+  .fourth-board::before {
+    content: url(img/Rectangle\ 38.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+  
+  .fith-board {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    background-color: #1E1E1E;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: #FAFAFA;
+    position: relative;
+  }
+  
+  .fith-board::before {
+    content: url(img/Star\ 1.png);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+  
+  a:link,
+  a:active {
+    text-decoration: none;
+    color: #1E1E1E;
+  }
+  
+  a:hover {
+    color: #8679ff96;
+  }
+  a:visited {
+    color: #311cf396;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .man {
+    background-color: #D3647B;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    padding-top: 15rem;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .man-1 {
+    background-color: #AC6ACB;
+  }
+  
+  .man-2 {
+    background-color: #535ED3;
+  }
+  
+  .man-3 {
+    background-color: #269D8B;
+  }
+  
+  .image-container {
+    max-width: 70rem;
+    text-align: center;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    0% {
+      transform: rotate(80deg);
+    }
+  
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width:48em) {
+    html {
+      font-size: 50%;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+
+    .nav {
+      text-align: center;
+    }
+  
+  
+    .img {
+      width: 50%;
+      height: 50%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    
+    .first-board::before {
+      content: url(img/res/Ellipse\ 12.svg);
+      width: 1000%;
+      display: block;
+      position: absolute;
+      top: -3rem;
+      } 
+      
+    .second-board::after {
+    content: url(img/res/Polygon\ 9.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+    }
+    
+    .third-board::before {
+      content: url(img/res/Polygon\ 10.svg);
+      display: block;
+      position: absolute;
+      top: -4rem;
+    }
+  
+    .fourth-board::before {
+      content: url(img/res/Rectangle\ 42.svg);
+      display: block;
+      position: absolute;
+      top: -4rem;
+    }
+  
+    .fith-board::before {
+      content: url(img/res/Star\ 1.svg);
+      display: block;
+      position: absolute;
+      width: 20px;
+      top: -3rem;
+    }
+  
+  }
